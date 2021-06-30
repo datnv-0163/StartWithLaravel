@@ -9,3 +9,9 @@
     <li><a href="{{route('admin.manage')}}">admin manage</a></li>
     <li><a href="{{route('product.manage')}}">product manage</a></li>
 </ul>
+<h2>route namespace<h2>
+    <ul>
+        <li><a href="{{route('user.manage')}}">user manage</a></li>
+        <li><a href="{{route('admin.manage')}}">admin manage</a></li>
+        <li><a href="{{route('product.manage')}}">product manage</a></li>
+    </ul>
