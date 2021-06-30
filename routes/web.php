@@ -30,3 +30,25 @@ Route::get('news/{id}', function ($id) {
 Route::get('news/{id}/category/{cate}', function ($id,$cate) {
     return "this is new number ${id} and category ${cate}";
 })->name('details');
+
+Route::prefix('backend')->group(function () {
+    Route::get('product-management', function () {
+        return "product management";
+    })->name('product.manage'); 
+    Route::get('user-management', function () {
+        return "user management";
+    })->name('user.manage');
+    Route::get('admin-management', function () {
+        return "admin management";
+    })->name('admin.manage');
+});
+
+Route::get('backend/product-management', function () {
+    return "product management";
+})->name('product.manage');
+Route::get('backend/user-management', function () {
+    return "user management";
+})->name('user.manage');
+Route::get('backend/admin-management', function () {
+    return "admin management";
+})->name('admin.manage');
