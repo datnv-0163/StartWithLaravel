@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('test');
 });
-Route::get('user', function () {
+Route::get('usersss', function () {
     return 'user screen';
-});
+})->name('user');
 
 Route::get('product', function () {
     return 'product screen';
