@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
-Route::get('/test', function () {
-    return 'datnv6712';
+Route::get('/user', function () {
+    return 'user screen';
+});
+
+Route::get('/product', function () {
+    return 'product screen';
 });
