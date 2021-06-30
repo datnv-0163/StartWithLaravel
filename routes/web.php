@@ -29,4 +29,4 @@ Route::get('news/{id}', function ($id) {
 });
 Route::get('news/{id}/category/{cate}', function ($id,$cate) {
     return "this is new number ${id} and category ${cate}";
-})->name('details')->where('id','[0-9]+');
+})->name('details');
