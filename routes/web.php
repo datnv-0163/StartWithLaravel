@@ -16,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('test');
 });
-Route::get('/user', function () {
+Route::get('user', function () {
     return 'user screen';
 });
 
-Route::get('/product', function () {
+Route::get('product', function () {
     return 'product screen';
+});
+
+Route::get('news/{id}', function ($id) {
+    return "this is new number ${id}";
+});
+Route::get('news/{id}/category/{cate}', function ($id,$cate) {
+    return "this is new number ${id} and category ${cate}";
 });
