@@ -33,6 +33,12 @@ Route::get('news/{id}/category/{cate}', function ($id,$cate) {
 
 Route::prefix('backend')->namespace('App\Http\Controllers\Backend')->group(function () {
     Route::get('product','ProductController@index')->name('product.manage'); 
+
+
+    Route::get('user/create', 'UserController@create')->name('user.create');
+    Route::post('user/store', 'UserController@store')->name('user.store');
+
+
     Route::get('user', 'UserController@index')->name('user.manage');
     Route::get('admin', 'AdminController@index')->name('admin.manage');
 });
