@@ -10,10 +10,16 @@ class UserController extends Controller
     public function index(){
         return 'list user';
     }
+    public function showid($id){
+        return 'user id : '.$id;
+    }
     public function create(){
         return view('CreateUser');
     }
     public function store(Request $request){
-        dd($request->all());
+        echo $request->path();
+    }
+    public function getURL(Request $request){
+         if ($request->isMethod('get')) echo 'true' ;
     }
 }
