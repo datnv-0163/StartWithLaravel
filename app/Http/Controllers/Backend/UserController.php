@@ -17,7 +17,7 @@ class UserController extends Controller
         return view('CreateUser');
     }
     public function store(Request $request){
-        echo $request->path();
+        echo $request->fullname;
     }
     public function getURL(Request $request){
          if ($request->isMethod('get')) echo 'true' ;
