@@ -43,6 +43,7 @@ Route::prefix('backend')->namespace('App\Http\Controllers\Backend')->group(funct
 
     Route::get('user/{id}', 'UserController@showid')->name('user.id');
     Route::get('user/url', 'UserController@getURL')->name('user.url');
-    
+    Route::get('user/getcookie', 'UserController@getCookie')->name('user.getCookie');
+    Route::get('user/setcookie', 'UserController@setCookie')->name('user.setCookie');
 });
 
