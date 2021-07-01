@@ -18,6 +18,8 @@ class UserController extends Controller
     }
     public function store(Request $request){
         echo $request->fullname;
+        if ($request->has('fullname')) echo '<br> co ten';
+        if ($request->has('age')) echo ' co tuoi' ;
     }
     public function getURL(Request $request){
          if ($request->isMethod('get')) echo 'true' ;
