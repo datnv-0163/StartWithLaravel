@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Example');
+    return view('test');
 });
 Route::get('usersss', function () {
     return 'user screen';

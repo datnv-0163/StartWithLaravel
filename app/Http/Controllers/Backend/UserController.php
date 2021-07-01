@@ -8,7 +8,9 @@ use Illuminate\Http\Response;
 class UserController extends Controller
 {
     public function index(){
-        return 'list user';
+        $ten='datnv6712';
+        $tuoi=12;
+        return view('info',['name'=>$ten,'age'=>$tuoi]);
     }
     public function showid($id){
         return 'user id : '.$id;
@@ -37,5 +39,6 @@ class UserController extends Controller
         return $request->cookie('username');
       
     }
+
 
 }
