@@ -46,4 +46,12 @@ Route::prefix('backend')->namespace('App\Http\Controllers\Backend')->group(funct
     Route::get('user/getcookie', 'UserController@getCookie')->name('user.getCookie');
     Route::get('user/setcookie', 'UserController@setCookie')->name('user.setCookie');
 });
+//tao database
+Route::get('createdb', function () {
+    Schema::create('users', function ( $table) {
+        $table->increments('id');
+        $table->string('name');
+    });
+    echo 'da tao bang ';
+});
 

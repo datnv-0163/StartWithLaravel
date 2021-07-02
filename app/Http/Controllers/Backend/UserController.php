@@ -8,7 +8,7 @@ use Illuminate\Http\Response;
 class UserController extends Controller
 {
     public function index(){
-        $ten='datnv6712';
+        $ten='datnv6712D';
         $tuoi=12;
         return view('info',['name'=>$ten,'age'=>$tuoi]);
     }
