@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Schema;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,11 +47,7 @@ Route::prefix('backend')->namespace('App\Http\Controllers\Backend')->group(funct
     Route::get('user/setcookie', 'UserController@setCookie')->name('user.setCookie');
 });
 //tao database
-Route::get('createdb', function () {
-    Schema::create('users', function ( $table) {
-        $table->increments('id');
-        $table->string('name');
-    });
-    echo 'da tao bang ';
+Route::get('updatedb', function () {
+    Schema::drop('user');
+    echo 'da thanh cong';
 });
-
